@@ -145,6 +145,13 @@
 		    background-color: var(--text-color);
 		}
 
+
+		@media (max-width: 1180px){
+
+			/* NOTHING! */
+
+		}
+
 	</style>
 <body>
 
@@ -202,6 +209,13 @@ typewriter.typeString('Full Stack Web Developer')
     .typeString('<strong>Let\'s work together ping me!</strong>')
     .pauseFor(2500)
     .start();
+
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+	window.location.replace("https://github.com/RiANDRAFT");
+}
+
 </script>
 
 <script type="text/javascript">
