@@ -1,9 +1,219 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RiAN</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GG</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
+	<style type="text/css">
+
+		:root {
+		  /*cursor: none;*/
+		  --cursorX: 10vw;
+		  --cursorY: 10vh;
+		  --text-color:  #fff;
+		  --tw-text-opacity: 1!important;
+		}
+
+		:root:before {
+		  content: '';
+		  display: block;
+		  width: 100%;
+		  height: 100%;
+		  position: fixed;
+		  pointer-events: none;
+		  background: radial-gradient(
+		    circle closest-corner at var(--cursorX) var(--cursorY),
+		    rgba(0,0,0,0) 0%,
+		    rgba(0,0,0,.5) 80%,
+		    rgba(0,0,0,.95) 100%
+		  );
+		  z-index: 100;
+		}
+		
+		body {
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+
+		}
+
+		h2 {
+			font-family: Marcellus;
+			color: #fff;
+		}
+
+		p {
+			color: #fff;
+			font-family: "Raleway",sans-serif;
+		}
+
+		a, a:hover {
+		    color: #fff;
+		    color: var(--text-color);
+		}
+
+
+		.al-landing-page {
+			height: 100vh;
+			width: 100vw;
+			background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJO3uLOTvY6lKR4-8LuahH947KVWXOYvM8MS3zRlccHbwQErBCMzOJOPXAOR6xh562fDGkx4XJsFP5mq4OCyedjwSA5AWBxjBFXQdsnf40NZNaHb49YTuZXOtclaQxAZWXsR8OF5KKFX6L5eAZiGZCAgHg19X-70u0k-UURA0pBtgZtY9uz15l6dVq/s16000/Dark-Wallpaper-Wide.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		/* LANDING CONTENT */
+		.landing-content {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+
+
+		/* PROFILE */
+		.alhanan {
+			height: 100vh;
+			width: 50vw!important;
+		}
+
+		.alhanan-png {
+			height: 90%;
+			position: absolute;
+			bottom: 0px;
+			right: 7%;
+		}
+
+
+		/* BIO */
+		.alhanan-bio {
+			height: 100vh;
+			width: 50vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		#about-rian {
+			color: white;
+		} 
+
+
+		.alhanan-bio h2, .alhanan-bio p {
+			margin-left: 350px;
+		}
+
+
+		.social-icon ul {
+		    list-style: none;
+		    padding: 0;
+		    margin: 0;
+		}
+
+		.social-icon {
+		    top: 50%;
+		    left: 30px;
+		    width: 20px;
+		    height: 200px;
+		    position: fixed;
+		    margin-top: -100px;
+		}
+
+		.social-icon p {
+		    top: 70px;
+		    left: -24px;
+		    width: 68px;
+		    height: 20px;
+		    color: var(--text-color);
+		    font-size: 12px;
+		    font-weight: 600;
+		    line-height: 1.2;
+		    white-space: nowrap;
+		    position: relative;
+		    transform: rotate(-90deg);
+		}
+
+		.social-icon p:after {
+		    top: 9px;
+		    right: -48px;
+		    width: 40px;
+		    height: 1px;
+		    content: "";
+		    display: block;
+		    position: absolute;
+		    background-color: var(--text-color);
+		}
+
+	</style>
 <body>
-	<h1>Hello World</h1>
+
+	<section class="al-landing-page">
+			<div class="landing-content">
+					<div class="alhanan">
+						<img class="alhanan-png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0gD70aaBSmzrF1WqkviJQcnjNAcSdHF8A-rFacLkzdMhO6s86iWPs_brEWuzhwwmL-xU8Ix4zULQfAu4gbpebzg-P6Bnaz1QXrYto0CC0rLzAbcEoUy1_-jWfq6kEAbK2cWhafLzNZ7UgdVd8U0n8kftQspH28jfFcRXvd6-s54tsMiv6GnEYQldj/s16000/al.png">
+					</div>
+
+					<div class="alhanan-bio">
+						<h2>I'm ALHanan</h2>
+						<h2 id="about-rian"> </h2>
+						<br>
+						<p> <span style="color: green; font-size: 20px;" > Full Stack Web Developer </span> with <span style="color: red; font-size: 30px;"> 3+</span> years of <span style="color: rgb(249 50 44/var(--tw-text-opacity))!important;; font-size: 20px;"> Laravel/Lumen Framework</span> experience!</p>
+					</div>
+			</div>
+	</section>
+
+
+	<section class="social-icons">
+		<div class="social-icon">
+			  <ul>
+			    <li>
+			      <a href="https://github.com/riandraft" style="cursor: none;">
+			        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+			          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+			        </svg>
+			      </a>
+			    </li>
+			  </ul>
+			  <p>Ping Me</p>
+			</div>
+	</section>
+
+
+
 </body>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.js"></script>
+<script type="text/javascript">
+var app = document.getElementById('about-rian');
+
+var typewriter = new Typewriter(app, {
+    loop: false
+});
+
+typewriter.typeString('Full Stack Web Developer')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Freelancer')
+    .pauseFor(2500)
+    .deleteChars(10)
+    .typeString('<strong>Let\'s work together ping me!</strong>')
+    .pauseFor(2500)
+    .start();
+</script>
+
+<script type="text/javascript">
+	function update(e){
+	  var x = e.clientX || e.touches[0].clientX
+	  var y = e.clientY || e.touches[0].clientY
+
+	  document.documentElement.style.setProperty('--cursorX', x + 'px')
+	  document.documentElement.style.setProperty('--cursorY', y + 'px')
+	}
+
+	document.addEventListener('mousemove',update)
+	document.addEventListener('touchmove',update)
+</script>
 </html>
