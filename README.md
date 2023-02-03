@@ -1,2 +1,1 @@
 # riandraft.github.io
-blog
