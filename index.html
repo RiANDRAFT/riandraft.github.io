@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GG</title>
-	<link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196">
+	<title>Al</title>
+	<link rel="shortcut icon" href="https://www.alhanan.me/favicon.ico">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
@@ -33,7 +33,7 @@
 		  );
 		  z-index: 100;
 		}
-		
+
 		body {
 			margin: 0px;
 			padding: 0px;
@@ -44,17 +44,27 @@
 		h2 {
 			font-family: Marcellus;
 			color: #fff;
+            -webkit-animation: neon .08s ease-in-out infinite alternate;
+            animation: neon .08s ease-in-out infinite alternate;
+            text-shadow: 0 0 10px #4cacaf, 0 0 20px #4cacaf, 0 0 40px #4cacaf, 0 0 10px #4cacaf, 0 0 80px #4cacaf, 0 0 160px #4cacaf;
 		}
 
-		p {
-			color: #fff;
+        p {
+            /* line-height: 1; */
 			font-family: "Raleway",sans-serif;
-		}
+            color: #fff;
+        }
 
 		a, a:hover {
 		    color: #fff;
 		    color: var(--text-color);
 		}
+
+        .nav-text {
+            -webkit-animation: neon .08s ease-in-out infinite alternate;
+            animation: neon .08s ease-in-out infinite alternate;
+            text-shadow: 0 0 10px #4cacaf, 0 0 20px #4cacaf, 0 0 40px #4cacaf, 0 0 10px #4cacaf, 0 0 80px #4cacaf, 0 0 160px #4cacaf;
+        }
 
 
 		.al-landing-page {
@@ -98,13 +108,11 @@
 
 		#about-rian {
 			color: white;
-		} 
-
-
-		.alhanan-bio h2, .alhanan-bio p {
-			margin-left: 350px;
 		}
 
+        .alhanan-bio h2, .alhanan-bio p {
+			margin-left: 350px;
+		}
 
 		.social-icon ul {
 		    list-style: none;
@@ -146,11 +154,8 @@
 		    background-color: var(--text-color);
 		}
 
-
 		@media (max-width: 1180px){
-
 			/* NOTHING! */
-
 		}
 
 	</style>
@@ -163,14 +168,11 @@
 					</div>
 
 					<div class="alhanan-bio">
-						<h2>I'm ALHanan</h2>
 						<h2 id="about-rian"> </h2>
-						<br>
-						<p> <span style="color: green; font-size: 20px;" > Full Stack Web Developer </span> with <span style="color: red; font-size: 30px;"> 3+</span> years of <span style="color: rgb(249 50 44/var(--tw-text-opacity))!important;; font-size: 20px;"> Laravel/Lumen Framework</span> experience!</p>
+						<p>Hi, i'm <span style="color: rgb(0, 255, 221); font-size: 15x;"> ALHanan </span> a passionate and motivated web developer with more than <span style="color: red; font-size: 30px;"> 3 </span> years of experience in developing and maintaining dynamic, user-friendly websites and web applications. I have a strong background in <span style="color: rgb(249 50 44/var(--tw-text-opacity))!important;">PHP framework Laravel and Lumen!</span></p>
 					</div>
 			</div>
 	</section>
-
 
 	<section class="social-icons">
 		<div class="social-icon">
@@ -183,11 +185,9 @@
 			      </a>
 			    </li>
 			  </ul>
-			  <p>Ping Me</p>
+			  <p class="nav-text">Ping Me</p>
 			</div>
 	</section>
-
-
 
 </body>
 
