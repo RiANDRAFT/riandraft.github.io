@@ -178,12 +178,25 @@
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-size: contain;
-			
+
 			@media (max-height: 400px) {
 				display: none;
 			}
 		}
 
+		.fade {
+		animation-name: fade;
+		animation-duration: 2s;
+		}
+
+		@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+		}
 	</style>
 <body>
 
@@ -194,12 +207,12 @@
 	<section class="al-landing-page">
 			<div class="landing-content">
 					<div class="alhanan">
-						<img class="alhanan-png" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0gD70aaBSmzrF1WqkviJQcnjNAcSdHF8A-rFacLkzdMhO6s86iWPs_brEWuzhwwmL-xU8Ix4zULQfAu4gbpebzg-P6Bnaz1QXrYto0CC0rLzAbcEoUy1_-jWfq6kEAbK2cWhafLzNZ7UgdVd8U0n8kftQspH28jfFcRXvd6-s54tsMiv6GnEYQldj/s16000/al.png">
+						<img class="alhanan-png lozad" data-src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0gD70aaBSmzrF1WqkviJQcnjNAcSdHF8A-rFacLkzdMhO6s86iWPs_brEWuzhwwmL-xU8Ix4zULQfAu4gbpebzg-P6Bnaz1QXrYto0CC0rLzAbcEoUy1_-jWfq6kEAbK2cWhafLzNZ7UgdVd8U0n8kftQspH28jfFcRXvd6-s54tsMiv6GnEYQldj/s16000/al.png">
 					</div>
 
 					<div class="alhanan-bio">
 						<h2 id="about-rian"> </h2>
-						<p>Hi, i'm <span style="color: rgb(0, 255, 221); font-size: 15x;"> ALHanan </span> a passionate and motivated web developer with more than <span style="color: red; font-size: 30px;"> 3 </span> years of experience in developing and maintaining dynamic, user-friendly websites and web applications. I have a strong background in <span style="color: rgb(249 50 44/var(--tw-text-opacity))!important;">PHP framework Laravel and Lumen!</span></p>
+						<p>Hi, i'm <span style="color: rgb(0, 255, 221); font-size: 15x;"> ALHanan </span> a passionate and motivated web developer with more than <span style="color: red; font-size: 30px;"> 3 </span> years of experience in developing and maintaining dynamic, user-friendly websites and web applications. I have a strong background in <span style="color: rgb(249 50 44/var(--tw-text-opacity))!important;">Laravel Framework</span></p>
 					</div>
 			</div>
 	</section>
@@ -224,9 +237,26 @@
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js'></script>
 <script type="text/javascript">
-var app = document.getElementById('about-rian');
 
+
+
+window.addEventListener('load', function() {
+	// const observer = lozad();
+	// observer.observe();
+
+	lozad('.lozad', {
+        load: function(el) {
+            el.src = el.dataset.src;
+            el.onload = function() {
+                el.classList.add('fade')
+            }
+        }
+    }).observe()
+})
+
+var app = document.getElementById('about-rian');
 var typewriter = new Typewriter(app, {
     loop: true
 });
@@ -264,7 +294,7 @@ if (isMobile) {
 
 <!-- RAIN EFFECT SCRIPT! -->
 <script>
-	// Falling rain simulation using 2D canvas
+// Falling rain simulation using 2D canvas
 // - vanilla JS, no frameworks
 // - framerate independent physics
 // - slow-mo / fast-forward support via demo.speed
@@ -332,9 +362,9 @@ demo.init = function() {
 		demo.resize();
 		Ticker.addListener(demo.step);
 		
-		// 
-		const gui = new dat.GUI();
-		gui.add(demo, 'speed', 0.2, 2);
+		// Al Commented!
+		// const gui = new dat.GUI();
+		// gui.add(demo, 'speed', 0.2, 2);
 		
 		// fade out instructions after a few seconds
 		var instructions = document.getElementById('instructions');
